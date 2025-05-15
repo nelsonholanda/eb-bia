@@ -1,0 +1,23 @@
+services:
+  server:
+    image: 194722426008.dkr.ecr.us-east-1.amazonaws.com/bia-eb:${TAG}
+    ports:
+      - 80:8080
+    environment:
+      DB_USER: postgres
+      #DB_PWD: postgres
+      DB_HOST: bia-beanstalk-db.cx4q6caas2ti.us-east-1.rds.amazonaws.com
+      DB_PORT: 5432
+      ## NAO PRECISA NO BOOTCAMP DAQUI PRA BAIXO ##
+      DB_SECRET_NAME: rds!db-49eb9158-f298-412c-b9a4-4deb1a40f70a
+      DB_REGION: us-east-1 
+      # AWS_ACCESS_KEY_ID: 
+      # AWS_SECRET_ACCESS_KEY:
+      # DEBUG_SECRET: 
+      # IS_LOCAL: true 
+    # healthcheck:
+    #   test: ["CMD", "curl", "-f", "http://localhost:8080/api/versao"]
+    #   interval: 10s
+    #   timeout: 5s
+    #   retries: 3
+    #   start_period: 5s     

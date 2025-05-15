@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <footer>
-      <p>Copyright Formação AWS 2025</p>
+      <p>Copyright Formação AWS 2025 - Henrylle Maia</p>
       <Link to="/about">Sobre a BIA</Link>
     </footer>
   );
