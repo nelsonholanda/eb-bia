@@ -36,3 +36,12 @@ yarn-error.log*
 !.elasticbeanstalk/*.cfg.yml
 !.elasticbeanstalk/*.global.yml
 !.elasticbeanstalk/config.yml
+
+# Local env files
+.env
+.env.development
+.env.test
+.env.production
+
+# Deploy artifacts
+bia-versao.*
