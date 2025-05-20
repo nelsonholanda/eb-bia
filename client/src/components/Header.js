@@ -20,7 +20,7 @@ const Header = ({ title, onAdd, showAdd }) => {
 };
 
 Header.defaultProps = {
-  title: "BIA 2025 V6 Com Script",
+  title: "BIA 2025 V7 DEPLOY Com Script",
 };
 
 export default Header;
