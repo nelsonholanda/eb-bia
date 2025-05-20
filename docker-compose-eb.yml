@@ -6,10 +6,10 @@ services:
     environment:
       DB_USER: postgres
       #DB_PWD: postgres
-      DB_HOST: bia-beanstalk-db.cx4q6caas2ti.us-east-1.rds.amazonaws.com
+      DB_HOST: bia-eb.cx4q6caas2ti.us-east-1.rds.amazonaws.com
       DB_PORT: 5432
       ## NAO PRECISA NO BOOTCAMP DAQUI PRA BAIXO ##
-      DB_SECRET_NAME: rds!db-49eb9158-f298-412c-b9a4-4deb1a40f70a
+      DB_SECRET_NAME: rds!db-c71297df-52c2-4aa9-b107-a361a768a952
       DB_REGION: us-east-1 
       # AWS_ACCESS_KEY_ID: 
       # AWS_SECRET_ACCESS_KEY:
