@@ -1,4 +1,6 @@
 #!/bin/bash
+source utils.sh
+
 versao=$(git rev-parse HEAD | cut -c1-7)
 echo "Versão: $versao"
 aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 194722426008.dkr.ecr.us-east-1.amazonaws.com
@@ -10,3 +12,4 @@ rm .env
 rm bia-versao.zip
 zip -r bia-versao.zip docker-compose.yml
 git checkout docker-compose.yml
+checar_ultimo_comando
