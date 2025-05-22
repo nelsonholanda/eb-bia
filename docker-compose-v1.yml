@@ -1,0 +1,11 @@
+name: bia-eb
+services:
+  server:
+    image: 194722426008.dkr.ecr.us-east-1.amazonaws.com/bia-eb:fda0a6c
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 8080
+        published: "80"
+        protocol: tcp
